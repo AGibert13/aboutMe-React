@@ -1,0 +1,217 @@
+html,
+body {
+    background-color: lightgrey;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+section,
+main {
+    display: inline-block;
+}
+
+header,
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+header h1 {
+    display: inline;
+    margin-left: 2%;
+    width: 25%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline darkred;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 2%;
+}
+
+#profilePic {
+    border-radius: 70%;
+    height: 12%;
+    width: 12%;
+    transition: width 1s, height, 1s;
+}
+
+#profilePic:hover {
+    width: 20%;
+    height: 20%
+}
+
+.socialMedia {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMedia img {
+    width: 50%;
+    height: 50%;
+}
+
+#intro {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('https://thumbs.gfycat.com/IckySkinnyAiredale-small.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-size: 99%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.website {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.websiteImg {
+    height: 90%;
+    width: 90%;
+}
+
+.website:hover {
+    text-decoration-line: underline;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer li {
+    display: inline;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2.5%;
+}
+
+ul,
+li {
+    width: 95%;
+}
+
+#projects {
+    background-color: rgba(0, 139, 139, .5);
+    color: white;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+article {
+    margin-top: 5%;
+}
+
+article p,
+article img {
+    width: 49%;
+    display: inline-block;
+}
+
+article img {
+    float: right;
+    height: 50%;
+}
+
+.hobbyHeader {
+    text-align: center;
+}
+
+.hobbyText {
+    padding-top: 8%;
+    text-align: center;
+}
+
+@media only screen and (max-width:940px) {
+    #profilePic {
+        height: 20%;
+        width: 20%;
+        transition: width 1s, height, 1s;
+    }
+    
+    #profilePic:hover {
+        width: 30%;
+        height: 30%
+    }
+
+    nav li {
+        display: inherit;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    footer li {
+        display: block;
+        text-align: left;
+        font-size: .8em;
+    }
+
+    ul,
+    li {
+        width: 90%;
+    }
+
+    .website {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    article {
+        margin-top: inherit;
+    }
+
+    article p,
+    article img {
+        width: 100%;
+        display: inherit;
+    }
+
+    article img {
+        float: inherit;
+    }
+
+    .hobbyText {
+        padding-top: inherit;
+    }
+}
